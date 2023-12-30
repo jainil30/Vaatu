@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+<!--    Label for the screen-->
+    <TextView
+        android:id="@+id/registerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+<!--    Email Input Widgets-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/text_input_email"
+        app:errorEnabled="true"
+
+
+        >
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailIdEt"
+        android:layout_marginTop="100dp"
+        android:hint="Email"
+        android:textSize="30sp"
+
+        android:inputType="textEmailAddress"
+        />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    Password Inputs-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:passwordToggleEnabled="true"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordEt"
+            android:hint="Password"
+            android:textSize="30sp"
+            android:inputType="textPassword"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/text_input_password"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:passwordToggleEnabled="true"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/conformPasswordEt"
+            android:hint="Conform Password"
+            android:textSize="30sp"
+            android:inputType="textPassword"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    Register Button-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerBtn"
+        android:layout_gravity="center_horizontal"
+        android:text="Register"
+        android:textSize="35sp"
+        />
+
+<!--    Text to direct user if he/she already has an account-->
+    <TextView
+        android:id="@+id/haveAccountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already have an account? Login"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        />
+
+
+
+</LinearLayout>

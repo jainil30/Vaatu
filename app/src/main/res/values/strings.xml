@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Vaatu</string>
+    <string name="web_client_id">172836968132-4mtra7icecavfvmjqon32bubrr4ah1u1.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

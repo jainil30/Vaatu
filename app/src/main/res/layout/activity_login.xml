@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <!--    Label for the screen-->
+
+    <TextView
+        android:id="@+id/registerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        />
+
+
+
+    <!--    Email Input Widgets-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_input_email"
+        app:errorEnabled="true"
+
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailIdEt"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:textSize="35sp"
+            android:inputType="textEmailAddress"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    Password Inputs-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_input_password"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:passwordToggleEnabled="true"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordEt"
+            android:hint="Password"
+            android:textSize="35sp"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgotPasswordTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Forgot Password? Recover"
+        android:textSize="15sp"
+        />
+
+    <!--    Register Button-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginBtn"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/login_icon"
+        android:drawablePadding="5dp"
+        android:text="Login "
+        android:textSize="35sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+
+    <!--    Google Sign in button-->
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleSignInBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+
+
+    <!--    Text to direct user if he/she already has an account-->
+    <TextView
+        android:id="@+id/notHaveAccountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Don't have an account? Register"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
